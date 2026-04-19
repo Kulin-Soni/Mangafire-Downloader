@@ -8,7 +8,7 @@ Download manga from mangafire and save as pdf.
 
 ## Setup
 
-1. Download required folders
+1. Download required libraries
 
     ```sh
     pip install -r requirements.txt # using pip (default)
@@ -28,6 +28,10 @@ Download manga from mangafire and save as pdf.
     ```
 
     Replace `[url]` with actual url, and `[output_path]` with an actual path.
+
+## Extras
+
+Use `auto.py` to bulk download manga volumes and chapters.
 
 ## Contributions
 
