@@ -1,0 +1,12 @@
+[project]
+name = "Mangafire Downloader"
+version = "0.1.0"
+description = "Download mangafire manga as pdf."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp>=3.13.5",
+    "camoufox>=0.4.11",
+    "img2pdf>=0.6.3",
+    "tqdm>=4.67.3",
+]
