@@ -48,10 +48,10 @@ async def main() -> None:
             urls.append(url[0])
 
 
-    async with AsyncCamoufox(headless=False) as browser:
-        page = await browser.new_page()
-        page.on("response", _response_handler)
-        for i in range(START, END+1):
+    for i in range(START, END+1):
+        async with AsyncCamoufox(headless=True) as browser:
+            page = await browser.new_page()
+            page.on("response", _response_handler)
             await page.goto(url=f"{PAGE_BASE_URL}{i}")
             await page.wait_for_load_state("networkidle")
             await to_pdf(urls, f"manga/Bleach_Vol_{i}")
