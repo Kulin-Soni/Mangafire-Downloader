@@ -1,6 +1,7 @@
 # Mangafire Downloader
 
-Download manga from mangafire and save as pdf.
+Download manga from mangafire website and save as pdf.
+Very quick and easy.
 
 ## Requirements
 
